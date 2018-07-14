@@ -34,12 +34,13 @@ public class StudentController {
 	}
 	
 	@PostMapping("saveStudent")
-	public void saveStudent(Student student){
+	public String saveStudent(Student student){
 		try {
 			studentService.save(student);
+			return "保存成功！";
 		} catch (Exception e) {
 			e.printStackTrace();
-			// TODO: handle exception
+			return e.getMessage();
 		}
 	}
 	

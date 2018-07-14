@@ -1,4 +1,4 @@
-package com.briup.app02.service.Impl;
+package com.briup.app02.service.impl;
 
 import java.util.List;
 
